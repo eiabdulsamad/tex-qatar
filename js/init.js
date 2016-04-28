@@ -33,7 +33,10 @@ getCoverValue();
 
 // ---------start menu---------
 
-
+setTimeout(function() {
+    generateMenu();
+    menuSmart();
+ },300);
 
  
 function generateMenu() {
@@ -210,10 +213,4 @@ $(window).load(function() {
   var getLang = getUrlVars()["lang"];
   languageSelector(lang);
   placeholderLanguage();
-
-setTimeout(function() {
-    generateMenu();
-    menuSmart();
- },100);
-  
 });
