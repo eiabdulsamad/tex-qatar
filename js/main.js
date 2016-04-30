@@ -4,9 +4,6 @@ $(function() {
   rating('.rating-box');
 
 
-
-
-
 $(document).on('click', '.open-product', function(){
   var dataID = $(this).attr('data-id');
   
@@ -26,6 +23,36 @@ getProductValue(dataID, img_num);
 
 
 });
+
+
+function listView(dataID, homeP) {
+
+        coverVal = coverV();
+
+        if(dataID == 'all') {
+
+          $.each(coverVal, function( key, val) {
+            var all = true;
+            var val = val[0]['title'];
+            if(homeP==true) {
+              var toHome = coverVal[key][0]['toHome'];
+              if(toHome == 'yes') {
+                visibleThis (key, val, coverVal, all, homeP);
+              }
+            } else {
+            visibleThis (key, val, coverVal, all);
+            }
+            
+          });
+        } else {
+          var val = coverVal[dataID][0]['title'],
+          all = false;
+          visibleThis (dataID, val, coverVal, all);
+        }
+
+        }
+
+
 
 
 if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
@@ -52,9 +79,18 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
 
   if($('body').hasClass('products')) {
     var dataID = getUrlVars()["i"];
-    setTimeout(function() {
-      listView(dataID);
-    },100)
+
+    /*var myVar = setInterval(function(){
+      if($('body').hasClass('pace-done')) {
+        listView(dataID);
+        clearInterval(myVar);
+      }
+    }, 100);*/
+      
+      Pace.on('hide', function(){
+        listView(dataID);
+      });
+    
     
   }
 } else {
@@ -66,38 +102,27 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
   if($('body').hasClass('products')) {
     homeP = false;
   }
-  
-  setTimeout(function() {
+
+  /*var myVar = setInterval(function(){
+    if($('body').hasClass('pace-done')) {
       listView('all', homeP);
-    },100)
+      clearInterval(myVar);
+    }
+  }, 100);*/
+
+  Pace.on('hide', function(){
+    listView('all', homeP);
+  });
+    
+      
+    
+  
+  // setTimeout(function() {
+  //     listView('all', homeP);
+  //   },3000)
 }
 
-      function listView(dataID, homeP) {
-
-        coverVal = coverV();
-
-        if(dataID == 'all') {
-
-          $.each(coverVal, function( key, val) {
-            var all = true;
-            var val = val[0]['title'];
-            if(homeP==true) {
-              var toHome = coverVal[key][0]['toHome'];
-              if(toHome == 'yes') {
-                visibleThis (key, val, coverVal, all, homeP);
-              }
-            } else {
-            visibleThis (key, val, coverVal, all);
-            }
-            
-          });
-        } else {
-          var val = coverVal[dataID][0]['title'],
-          all = false;
-          visibleThis (dataID, val, coverVal, all);
-        }
-
-        }
+      
       
 
 
@@ -475,10 +500,5 @@ function closePopUp() {
   setTimeout(function(){$('.overlay-popup.visible').removeClass('visible');}, 500);
 
 }
-
-
-
-
-
 
 });
