@@ -215,15 +215,15 @@ $(window).load(function() {
 
 
 
-function languageSelector(lang) {
-    var $frame = $('.goog-te-menu-frame:first');
-    $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
-  }
+// function languageSelector(lang) {
+//     var $frame = $('.goog-te-menu-frame:first');
+//     $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
+//   }
 
 
 var myVar = setInterval(function(){
       if($('body').hasClass('pace-done')) {
-        languageSelector("Arabic");
+        //languageSelector("Arabic");
         placeholderLanguage();
         clearInterval(myVar);
       }
