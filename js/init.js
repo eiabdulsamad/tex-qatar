@@ -202,12 +202,6 @@ $(window).load(function() {
 });
 
 
- function languageSelector(lang) {
-    var $frame = $('.goog-te-menu-frame:first');
-    $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
-  }
-
-
 Pace.on('hide', function(){
   generateMenu();
   menuSmart();
@@ -218,3 +212,8 @@ Pace.on('hide', function(){
   placeholderLanguage();
 });
 
+
+ function languageSelector(lang) {
+    var $frame = $('.goog-te-menu-frame:first');
+    $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
+  }
