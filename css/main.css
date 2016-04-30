@@ -2812,6 +2812,11 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
     .about_details .list-items li {
       list-style: square; }
 
+@media (max-width: 1199px) and (min-width: 991px) {
+  .arabic .textksa {
+    margin-left: -70px; }
+  .arabic .textksa + .fa-caret-down {
+    display: none; } }
 .arabic .about_details {
   text-align: right; }
   .arabic .about_details .list-items {
@@ -3050,12 +3055,6 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
     overflow: visible; }
   .single-widget h2 {
     margin-top: -10px !important; } }
-@media (max-width: 1199px) and (min-width: 991px) {
-  .textksa {
-    margin-left: -70px; }
-
-  .textksa + .fa-caret-down {
-    display: none; } }
 @media (max-width: 991px) and (min-width: 768px) {
   .single-products:hover .product-overlay .round-button {
     height: 50px; }

@@ -3344,6 +3344,16 @@ div[data-rpt="2"] {
 }
 
 .arabic {
+
+  @media (max-width: 1199px) and (min-width: 991px) {
+    .textksa {
+     margin-left: -70px;
+   }
+   .textksa + .fa-caret-down {
+    display: none;
+  }
+}
+
   .about_details {
     text-align: right;
     .list-items {
@@ -3654,15 +3664,6 @@ div[data-rpt="2"] {
     } 
   }
 
-}
-
-@media (max-width: 1199px) and (min-width: 991px) {
-  .textksa {
-   margin-left: -70px;
- }
- .textksa + .fa-caret-down {
-  display: none;
-}
 }
 
 
