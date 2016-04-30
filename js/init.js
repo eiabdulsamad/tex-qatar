@@ -34,7 +34,10 @@ getCoverValue();
 // ---------start menu---------
 
 
-
+Pace.on('hide', function(){
+  generateMenu();
+  menuSmart();
+});
 
 
 
@@ -202,18 +205,11 @@ $(window).load(function() {
 });
 
 
-Pace.on('hide', function(){
-  generateMenu();
-  menuSmart();
-
-
-  var getLang = getUrlVars()["lang"];
-  languageSelector(lang);
-  placeholderLanguage();
-});
-
-
  function languageSelector(lang) {
     var $frame = $('.goog-te-menu-frame:first');
     $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
   }
+
+
+//Language setup
+

@@ -502,3 +502,10 @@ function closePopUp() {
 }
 
 });
+
+
+$(window).load(function() {
+  var getLang = getUrlVars()["lang"];
+  languageSelector(lang);
+  placeholderLanguage();
+});
