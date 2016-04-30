@@ -34,10 +34,7 @@ getCoverValue();
 // ---------start menu---------
 
 
-Pace.on('hide', function(){
-  generateMenu();
-  menuSmart();
-});
+
 
 
 
@@ -211,9 +208,13 @@ $(window).load(function() {
   }
 
 
-//Language setup
-$(window).load(function() {
+Pace.on('hide', function(){
+  generateMenu();
+  menuSmart();
+
+
   var getLang = getUrlVars()["lang"];
   languageSelector(lang);
   placeholderLanguage();
 });
+
