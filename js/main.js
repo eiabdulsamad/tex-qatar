@@ -80,16 +80,16 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
   if($('body').hasClass('products')) {
     var dataID = getUrlVars()["i"];
 
-    /*var myVar = setInterval(function(){
+    var myVar = setInterval(function(){
       if($('body').hasClass('pace-done')) {
         listView(dataID);
         clearInterval(myVar);
       }
-    }, 100);*/
+    }, 100);
       
-      Pace.on('hide', function(){
+      /*Pace.on('hide', function(){
         listView(dataID);
-      });
+      });*/
     
     
   }
@@ -103,16 +103,16 @@ if((window.location.href.indexOf('?')+1) && (! $('body').hasClass('home'))) {
     homeP = false;
   }
 
-  /*var myVar = setInterval(function(){
+  var myVar = setInterval(function(){
     if($('body').hasClass('pace-done')) {
       listView('all', homeP);
       clearInterval(myVar);
     }
-  }, 100);*/
+  }, 100);
 
-  Pace.on('hide', function(){
+  /*Pace.on('hide', function(){
     listView('all', homeP);
-  });
+  });*/
     
       
     
@@ -504,14 +504,4 @@ function closePopUp() {
 });
 
  
- function languageSelector(lang) {
-    var $frame = $('.goog-te-menu-frame:first');
-    $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
-  }
-
-
-$(window).load(function() {
-  var getLang = getUrlVars()["lang"];
-  languageSelector(lang);
-  placeholderLanguage();
-});
+ 
