@@ -36,7 +36,7 @@ $(window).load(function() {
   if($('body').hasClass('pace-done')) {
     setTimeout(function() {
     languageSelector("Arabic");
-     },100)
+     },0)
 }
 });
 
