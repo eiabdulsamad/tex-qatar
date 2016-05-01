@@ -39,14 +39,6 @@ Pace.on('hide', function(){
   menuSmart();
 });
 
-
-/*Pace.on('hide', function(){
-  generateMenu();
-  menuSmart();
-});*/
-
-
-
  
 function generateMenu() {
     var coverVal = coverV(),
@@ -169,9 +161,6 @@ function getUrlVars() {
 
 
 
-//Language setup
-
-
 $(window).load(function() {
   var footerScroll = new Swiper('.footer-scroll', {
     nextButton: '.swiper-button-next',
@@ -181,17 +170,3 @@ $(window).load(function() {
     loop: true,
   });
 });
-
-
-
-
-
-  //var getLang = getUrlVars()["lang"];
-  //alert(lang);
-  //languageSelector("Arabic");
-  
-
-
-
-//Language setup
-
