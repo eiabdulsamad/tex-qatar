@@ -32,13 +32,14 @@ function placeholderLanguage() {
   }
 }
 
-$(window).load(function() {
-  if($('body').hasClass('pace-done')) {
+
+  Pace.on('hide', function(){
     setTimeout(function() {
-    languageSelector("Arabic");
-     },0)
-}
+        languageSelector("Arabic");
+      },0)
+     
 });
+
 
 
 function languageSelector(lang) {
@@ -47,7 +48,10 @@ function languageSelector(lang) {
 }
 
 Pace.on('hide', function(){
-  placeholderLanguage();
+  setTimeout(function() {
+    placeholderLanguage();
+  },10)
+  
 });
 
 });
