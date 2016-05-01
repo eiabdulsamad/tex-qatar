@@ -512,7 +512,7 @@ function placeholderLanguage() {
     var div = $('<div id="placeholders" style="display:none;"></div>');
     placeholders.forEach(function(input){
       var text = input.placeholder;
-      div.append('<div>' + text + '</div>');    
+      div.append('<div>' + text + ' </div>');    
     });
     $('body').append(div);
     var originalPH = placeholders[0].placeholder;
@@ -536,9 +536,21 @@ function placeholderLanguage() {
 
 
 
+
 if($('body').hasClass('pace-done')) {
-  languageSelector("Arabic");
+    languageSelector("Arabic");
 }
+
+/*$(window).load(function() {
+  if($('body').hasClass('pace-done')) {
+    languageSelector("Arabic");
+}
+});*/
+
+  // setTimeout(function() {
+  //   languageSelector("Arabic");
+  // },10000)
+
 
 function languageSelector(lang) {
   var $frame = $('.goog-te-menu-frame:first');
