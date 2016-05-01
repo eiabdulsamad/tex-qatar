@@ -32,13 +32,13 @@ function placeholderLanguage() {
   }
 }
 
-$(window).load(function() {
+
   if($('body').hasClass('pace-done')) {
     setTimeout(function() {
     languageSelector("Arabic");
      },0)
 }
-});
+
 
 
 function languageSelector(lang) {
