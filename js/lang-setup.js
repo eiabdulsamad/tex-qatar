@@ -32,21 +32,13 @@ function placeholderLanguage() {
   }
 }
 
-/*$(window).load(function() {
+$(window).load(function() {
   if($('body').hasClass('pace-done')) {
     setTimeout(function() {
     languageSelector("Arabic");
-     },100)
+     },0)
 }
-});*/
-
-if (($('.pace-progress').attr('data-progress-text')) =='90') {
-  languageSelector("Arabic");
-};
-
-// <div class="pace-progress" data-progress-text="99%" data-progress="99" style="transform: translate3d(99.2385%, 0px, 0px);">
-//   <div class="pace-progress-inner"></div>
-// </div>
+});
 
 
 function languageSelector(lang) {
