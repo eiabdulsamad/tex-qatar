@@ -338,21 +338,24 @@
 			<script src="js/jquery.smartmenus.bootstrap.js"></script>
 			<script src="js/init.js"></script>
 			<script src="js/swiper.min.js"></script>
-			<script src="js/jquery.scrollUp.min.js"></script>
-			
+			<script src="js/jquery.scrollUp.min.js"></script>			
 			<script src="js/jquery.smoothScroll.js"></script>
 
-			<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+			<script src="js/lang-setup.js"></script>
 			
-			<script>
-				$.scrollUp();
+			<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+			<script>
+				//Language setup
 				function googleTranslateElementInit() {
 					new google.translate.TranslateElement({includedLanguages: 'en,ar', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-20815066-2'}, 'google_translate_element');
 				}
-
-
+								
+				$(function(){
+					$.scrollUp();
+				})
 			</script>
+		
 
 		</body>
 		</html>

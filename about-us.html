@@ -567,40 +567,22 @@
 			<script src="js/swiper.min.js"></script>
 			<script src="js/jquery.scrollUp.min.js"></script>
 			<script src="js/jquery.smoothScroll.js"></script>
+			
+
+			<script src="js/lang-setup.js"></script>
+			<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 			<script>
 				//Language setup
 				function googleTranslateElementInit() {
 					new google.translate.TranslateElement({includedLanguages: 'en,ar', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-20815066-2'}, 'google_translate_element');
 				}
-			</script>
-			<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-			/*<!-- <script src="js/main.js"></script> -->*/
-
-			
-			<script>
+								
 				$(function(){
 					$.scrollUp();
-
-					function setContentSize() {
-						$('.image-gall').css({
-							height: $(window).height()-90/*$('.image-gall .gallery-thumbs').height()*/
-						})
-					}
-					setContentSize()
-					$(window).resize(function(){
-						setContentSize()
-					})
+					
 				})
-
-
-//Language setup
-function googleTranslateElementInit() {
-	new google.translate.TranslateElement({includedLanguages: 'en,ar', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-20815066-2'}, 'google_translate_element');
-}
-
-
-			</script>
+		</script>
 
 		</body>
 		</html>
