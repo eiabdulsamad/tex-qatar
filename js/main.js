@@ -537,15 +537,24 @@ function placeholderLanguage() {
 
 
 
-if($('body').hasClass('pace-done')) {
-    languageSelector("Arabic");
-}
 
-/*$(window).load(function() {
+
+
+
+
+
+
+
+
+// if($('body').hasClass('pace-done')) {
+//     languageSelector("Arabic");
+// }
+
+$(window).load(function() {
   if($('body').hasClass('pace-done')) {
     languageSelector("Arabic");
 }
-});*/
+});
 
   // setTimeout(function() {
   //   languageSelector("Arabic");
