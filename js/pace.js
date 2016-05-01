@@ -285,8 +285,8 @@
         return false;
       }
       el = this.getElement();
-      transform = "translate3d(" + this.progress + "%, 0, 0)";
-      _ref2 = ['webkitTransform', 'msTransform', 'transform'];
+      transform = this.progress + "%";
+      _ref2 = ['height'];
       for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
         key = _ref2[_j];
         el.children[0].style[key] = transform;
