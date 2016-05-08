@@ -474,7 +474,7 @@ ul.sub-menu {
 
 .searchform input {
   border: 1px solid #DDDDDD;
-  color: #CCCCC6;
+  color: black;
   font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif;
   font-size: 14px;
   margin-top: 0;
@@ -2816,6 +2816,24 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
     .about_details .list-items li {
       list-style: square; }
 
+#orderForm + .thankyou_message h2 {
+  color: #009800;
+  margin-left: 0;
+  margin-right: 182px;
+  text-left: right; }
+
+.arabic #orderForm + .thankyou_message h2 {
+  color: #009800;
+  margin-left: 182px;
+  margin-right: 0;
+  text-align: right; }
+.arabic #contactForm + .thankyou_message {
+  text-align: right; }
+.arabic #signMeUpForm + .thankyou_message {
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
 @media (max-width: 1199px) and (min-width: 991px) {
   .arabic .textksa {
     margin-left: -70px; }
@@ -3201,5 +3219,12 @@ body.page_qatar .for-qatar.phone-sec, body.page_qatar .for-qatar.email-sec {
 
 body.page_india .for-india.phone-sec, body.page_india .for-india.email-sec {
   display: block !important; }
+
+button.input-group-addon {
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding: 10px 25px 10px 12px; }
 
 /*# sourceMappingURL=main.css.map */

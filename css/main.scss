@@ -610,7 +610,7 @@ ul.sub-menu {
 .searchform {
   input {
     border: 1px solid #DDDDDD;
-    color: #CCCCC6;
+    color: black;
     font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif;
     font-size: 14px;
     margin-top: 0;
@@ -3345,8 +3345,21 @@ div[data-rpt="2"] {
     }
   }
 }
-
+ #orderForm + .thankyou_message h2 {
+  color: #009800; margin-left: 0; margin-right: 182px; text-left:right;
+ }
 .arabic {
+
+ #orderForm + .thankyou_message h2 {
+  color: #009800; margin-left: 182px; margin-right: 0; text-align:right;
+ }
+
+  #contactForm + .thankyou_message {
+    text-align: right;
+  }
+  #signMeUpForm + .thankyou_message {
+    @include transform(rotateY(180deg));
+  }
 
   @media (max-width: 1199px) and (min-width: 991px) {
     .textksa {
@@ -3876,3 +3889,8 @@ body.page_india {
     }
   }
 }
+
+ button.input-group-addon {
+  @include transition(300ms);
+  padding: 10px 25px 10px 12px;
+ }

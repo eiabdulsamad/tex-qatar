@@ -169,8 +169,9 @@
 							<h2 class="title text-center">Get In Touch</h2>
 							<div class="status alert alert-success" style="display: none"></div>
 
-							<form id="gform" class="contact-form row pure-form" name="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbwckc-Tzc70uzhcYO4Xr2q8r5iUMYAchO2CshTafDxvsyTIzzgQ/exec">
-								<input type="hidden" name="website" value="Qatar">
+							<form id="contactForm" class="contact-form row pure-form" name="contactForm" method="post" action="https://script.google.com/macros/s/AKfycbzxwXwecJ_hHBK74PmarVGmkvMN_yo27pQmTakEN60dz4QUHLM/exec">
+								<input type="hidden" name="website">
+								<input type="hidden" name="submittedPage">
 								<input type="hidden" name="form" value="Contact Form">
 
 								<div class="form-group col-md-6">
@@ -178,7 +179,7 @@
 								</div>
 								<div class="form-group col-md-6">
 									<input type="email" name="email" class="form-control" required="required" placeholder="Email">
-									<span id="email-invalid" style="display: none; color: #f20000;">
+									<span class="email-invalid" style="display: none; color: #f20000;">
 										Must be a valid email address</span>
 									</div>
 									<div class="form-group col-md-12">
@@ -192,8 +193,8 @@
 									</div>
 								</form>
 
-								<div style="display:none;" id="thankyou_message">
-									<h2><em>Thanks</em> for contacting us!
+								<div style="display:none;" class="thankyou_message">
+								<h2 style="margin: 50px 0">Thanks for contacting us!
 										We will get back to you soon!</h2>
 									</div>
 
@@ -219,13 +220,22 @@
 							<div class="single-widget flex">
 								<div class="col-sm-3"><h2 class="pull-right">Sign me up</h2></div>
 								<div class="col-sm-9">
-									<form action="#" class="searchform offset-top-40">
+									<form id="signMeUpForm" class="searchform offset-top-40 pure-form" name="signMeUpForm" method="post" action="https://script.google.com/macros/s/AKfycbzxwXwecJ_hHBK74PmarVGmkvMN_yo27pQmTakEN60dz4QUHLM/exec">
 										<div class="form-group flex">
-											<input type="text" placeholder="Your email address">
-											<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+											<input type="hidden" name="website" value="India">
+											<input type="hidden" name="submittedPage" value="">
+											<input type="hidden" name="form" value="SignMeUp Form">
+
+											<input type="text" name="email" placeholder="Your email address">
+											<span class="email-invalid" style="display: none; color: #f20000;">
+												Must be a valid email address</span>
+												<button type="submit" name="submit" value="Submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+											</div>
+											<p>Sign up for our email newsletter Receive updates and exclusive offers</p>
+										</form>
+										<div style="display:none;" class="thankyou_message">
+											<p style="margin-top:8px;">Your mail address have sent successfully. Thanks!</p style="">
 										</div>
-										<p>Sign up for our email newsletter Receive updates and exclusive offers</p>
-									</form>
 								</div>
 							</div>			
 
@@ -309,20 +319,34 @@
 						<div class="col-sm-3 col-sm-offset-1">
 							<div class="single-widget">
 								<h2>Quick Connect</h2>
-								<form action="#" class="searchform">
 
-									<input type="text" placeholder="Name" class="offset-bottom-5" />
-									<input type="text" placeholder="Email address" class="offset-bottom-5" />
+								<form id="quickContactForm" class="quickContactForm pure-form searchform" name="quickContactForm" method="post" action="https://script.google.com/macros/s/AKfycbzxwXwecJ_hHBK74PmarVGmkvMN_yo27pQmTakEN60dz4QUHLM/exec">
 
-									<div class="form-group">
-										<div class="input-group">
-											<input type="text" placeholder="Phone number"/>
-											<a class="btn-default input-group-addon">
-												<i class="fa fa-paper-plane"></i></a>
+									<input type="hidden" name="website">
+									<input type="hidden" name="submittedPage">
+									<input type="hidden" name="form" value="Quick Contact Form">
+
+									<input type="text" name="name" required="required" placeholder="Name" class="offset-bottom-5">
+									<input type="email" name="email" required="required" placeholder="Email Address" class="offset-bottom-5" />
+									<span class="email-invalid" style="display: none; color: #f20000; text-align: right;">
+										Must be a valid email address</span>
+
+										<div class="form-group">
+											<div class="input-group flex">
+												<input type="text" name="phoneNumber" required="required" placeholder="Phone Number">
+
+												<button type="submit" name="submit" class="btn-default input-group-addon">
+													<i class="fa fa-paper-plane"></i></button>
+
+												</div>
 											</div>
+
+										</form>
+
+										<div style="display:none;" class="thankyou_message">
+											<h2 style="margin: 50px 0; text-transform: inherit; font-weight: 400;">Thanks for contacting us! We will get back to you soon!</h2>
 										</div>
 
-									</form>
 								</div>
 							</div>
 
@@ -339,6 +363,7 @@
 				</div>
 
 			</footer>
+		</div>
 		</div>
 
 
