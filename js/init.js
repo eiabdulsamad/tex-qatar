@@ -100,12 +100,22 @@ if((hrefFull.indexOf('qatar') >= 0) || (hrefFull.indexOf('ksa') >= 0)) {
       var flval1='qatar',
       flval2='ksa',
       flval3='india';
+
+	link3 = 'http://texworld.barrackinternational.com/';
+    link2 = 'http://texworld-ksa.barrackinternational.com/';
+    link1 = 'http://texworld-qatar.barrackinternational.com/';
+
       $('body').addClass('page_qatar');
     }
     if (hrefFull.indexOf('ksa') >= 0) {
       var flval1='ksa',
       flval2='qatar',
       flval3='india';
+
+    link3 = 'http://texworld.barrackinternational.com/';
+    link1 = 'http://texworld-ksa.barrackinternational.com/';
+    link2 = 'http://texworld-qatar.barrackinternational.com/';
+
       $('body').addClass('page_ksa');
     }
 } else {
@@ -117,9 +127,14 @@ if((hrefFull.indexOf('qatar') >= 0) || (hrefFull.indexOf('ksa') >= 0)) {
     var flval1='india',
     flval2='ksa',
     flval3='qatar';
+
+    link1 = 'http://texworld.barrackinternational.com/';
+    link2 = 'http://texworld-ksa.barrackinternational.com/';
+    link3 = 'http://texworld-qatar.barrackinternational.com/';
+
   }
 
-$('.second-menu-section .btn-group').append('<div class="header-top-entry"><div class="title"><img alt="" src="images/'+flval1+'-flag.png"><span class="text'+flval1+'">'+flval1+'</span><i class="fa fa-caret-down"></i></div><div class="list"><a class="list-entry" href="http://texworld-'+flval2+'.barrackinternational.com/"><img alt="" src="images/'+flval2+'-flag.png"><span class="text'+flval2+'">'+flval2+'</span></a><a class="list-entry" href="http://texworld-'+flval3+'.barrackinternational.com/"><img alt="" src="images/'+flval3+'-flag.png"><span class="text'+flval3+'">'+flval3+'</span></a></div></div>');
+$('.second-menu-section .btn-group').append('<div class="header-top-entry"><div class="title"><img alt="" src="images/'+flval1+'-flag.png"><span class="text'+flval1+'">'+flval1+'</span><i class="fa fa-caret-down"></i></div><div class="list"><a class="list-entry" href="'+link2+'"><img alt="" src="images/'+flval2+'-flag.png"><span class="text'+flval2+'">'+flval2+'</span></a><a class="list-entry" href="'+link3+'"><img alt="" src="images/'+flval3+'-flag.png"><span class="text'+flval3+'">'+flval3+'</span></a></div></div>');
 
 /*var getLang = getUrlVars()["lang"];
 

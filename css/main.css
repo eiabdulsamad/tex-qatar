@@ -21,23 +21,20 @@
   overflow: hidden;
   height: 0;
   opacity: 0;
-  visibility: hidden;
-  -moz-transition: all 1000ms ease-in;
-  -o-transition: all 1000ms ease-in;
-  -webkit-transition: all 1000ms ease-in;
-  transition: all 1000ms ease-in; }
+  -moz-transition: all 700ms ease-in;
+  -o-transition: all 700ms ease-in;
+  -webkit-transition: all 700ms ease-in;
+  transition: all 700ms ease-in; }
 
-.translated-rtl .arabic.pace-done .main-wrp {
-  -moz-transition-delay: 500ms;
-  -o-transition-delay: 500ms;
-  -webkit-transition-delay: 500ms;
-  transition-delay: 500ms; }
-
-.translated-rtl .arabic.pace-done .main-wrp, .page_india.pace-done .main-wrp {
+.arabic.pace-done .main-wrp, .page_india.pace-done .main-wrp {
   opacity: 1;
-  visibility: visible;
   overflow: auto;
   height: auto; }
+
+.opening.arabic.pace-done .main-wrp {
+  opacity: .05;
+  height: 100%;
+  overflow: hidden; }
 
 body {
   font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif;
@@ -3226,5 +3223,58 @@ button.input-group-addon {
   -webkit-transition: 300ms;
   transition: 300ms;
   padding: 10px 25px 10px 12px; }
+
+.language-selector {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in; }
+
+.lang-box-wrp {
+  text-align: center;
+  width: 300px;
+  height: 170px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+  .lang-box-wrp h3 {
+    float: left;
+    width: 100%;
+    margin-top: -33px; }
+  .lang-box-wrp .arabic-sec {
+    font-size: 20px;
+    float: right; }
+  .lang-box-wrp .english-sec {
+    font-size: 21px;
+    float: left; }
+  .lang-box-wrp .lang-box {
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #f20000;
+    color: white;
+    cursor: pointer;
+    transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    transition: all 200ms ease-in; }
+    .lang-box-wrp .lang-box:hover {
+      transform: scale(1.2); }
+    .lang-box-wrp .lang-box:last-of-type {
+      left: auto;
+      right: 0; }
 
 /*# sourceMappingURL=main.css.map */

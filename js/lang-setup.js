@@ -1,6 +1,9 @@
 
 $(function() {
 
+if($('body').hasClass('home')) {
+  $('body').addClass('opening')
+}
 //language setup
 
 function placeholderLanguage() {
@@ -32,12 +35,16 @@ function placeholderLanguage() {
   }
 }
 
+function openLanguageSelector() {
+  $('.language-selector').css({'visibility': 'visible', 'opacity': 1});
+  
+}
 
-  Pace.on('hide', function(){
-    setTimeout(function() {
-        languageSelector("Arabic");
-      },0)
-     
+Pace.on('hide', function(){
+  openLanguageSelector();
+  setTimeout(function() {
+    languageSelector("Arabic");
+  },700)
 });
 
 
@@ -52,6 +59,13 @@ Pace.on('hide', function(){
     placeholderLanguage();
   },10)
   
+});
+
+$('#arabic-lang').on('click', function() {
+//languageSelector("Arabic");
+  $('.language-selector').css({'visibility': 'hidden', 'opacity': 0});
+  $('body').removeClass('opening');
+
 });
 
 });
