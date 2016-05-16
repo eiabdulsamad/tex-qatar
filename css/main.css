@@ -26,13 +26,21 @@
   -webkit-transition: all 700ms ease-in;
   transition: all 700ms ease-in; }
 
+.translated-rtl .arabic.pace-done .main-wrp {
+  -moz-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
+  -webkit-transition-delay: 500ms;
+  transition-delay: 500ms; }
+
 .arabic.pace-done .main-wrp, .page_india.pace-done .main-wrp {
   opacity: 1;
+  visibility: visible;
   overflow: auto;
   height: auto; }
 
 .opening.arabic.pace-done .main-wrp {
   opacity: .05;
+  visibility: visible;
   height: 100%;
   overflow: hidden; }
 
@@ -2819,6 +2827,16 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
   margin-right: 182px;
   text-left: right; }
 
+.for-eng {
+  display: block; }
+
+.for-arabic {
+  display: none; }
+
+.arabic .for-eng {
+  display: none !important; }
+.arabic .for-arabic {
+  display: block; }
 .arabic #orderForm + .thankyou_message h2 {
   color: #009800;
   margin-left: 182px;
@@ -2881,6 +2899,11 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg); }
+  .arabic .top-row strong {
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    display: inline-block; }
   .arabic .top-row .contactinfo .nav-pills span {
     display: inline-block;
     -moz-transform: rotateY(180deg);
@@ -3208,6 +3231,9 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
 .nav > li.email-sec, .nav > li.phone-sec {
   display: none; }
 
+.nav > li.phone-sec.view_this {
+  display: block !important; }
+
 body.page_ksa .for-ksa.phone-sec, body.page_ksa .for-ksa.email-sec {
   display: block !important; }
 
@@ -3276,5 +3302,8 @@ button.input-group-addon {
     .lang-box-wrp .lang-box:last-of-type {
       left: auto;
       right: 0; }
+
+.opening {
+  overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */
