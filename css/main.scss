@@ -1393,7 +1393,7 @@ h2.title:before {
 .view-product {
   position: relative;
   img {
-    width: 100%;
+    
     height: auto
   }
   h3 {
@@ -3986,4 +3986,8 @@ body.page_india {
 
 .opening {
   overflow: hidden;
+}
+
+.swiper-lazy-preloader {
+    opacity: 0;
 }

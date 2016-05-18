@@ -1082,7 +1082,6 @@ h2.title:before {
 .view-product {
   position: relative; }
   .view-product img {
-    width: 100%;
     height: auto; }
   .view-product h3 {
     background: #f20000;
@@ -3305,5 +3304,8 @@ button.input-group-addon {
 
 .opening {
   overflow: hidden; }
+
+.swiper-lazy-preloader {
+  opacity: 0; }
 
 /*# sourceMappingURL=main.css.map */
