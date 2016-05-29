@@ -2762,19 +2762,23 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
     transition: opacity 300ms ease-out; }
 
 @media (max-width: 767px) {
+  .left-section {
+    display: none; }
+
   .image-gall .gallery-thumbs .swiper-slide {
     width: 12%; }
 
   .title-main-bx {
     margin-top: 20px; }
 
-  .main-section {
-    display: -webkit-flex;
-    display: flex;
+  .arabic .main-section {
     display: block; }
 
   .second-menu-section .btn-group .textksa {
-    padding-right: 0 !important; } }
+    padding-right: 0 !important; }
+
+  .main-section .left-section {
+    display: none; } }
 @media (max-width: 768px) {
   .right-section.padding-right {
     padding-right: 15px; } }
@@ -2884,7 +2888,7 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
   font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif; }
 .arabic .product-detail-box .product-title, .arabic .product-information .product-title {
   font-size: 28px !important; }
-.arabic .product-description {
+.arabic .product-description, .arabic .product-description {
   font-size: 13px;
   color: #ABABAB; }
 .arabic .dropdown-menu li a {

@@ -3271,18 +3271,23 @@ div[data-rpt="2"] {
 }
 
 @media (max-width: 767px) {
+  .left-section {
+    display: none;
+  }
   .image-gall .gallery-thumbs .swiper-slide {
     width: 12%;
   }
    .title-main-bx {
     margin-top: 20px;
   }
-  .main-section {
-    @include display-flex;
+  .arabic .main-section {
     display: block;
   }
   .second-menu-section .btn-group .textksa {
     padding-right: 0 !important;
+  }
+  .main-section .left-section {
+    display: none;
   }
 }
 
@@ -3442,7 +3447,7 @@ div[data-rpt="2"] {
   .product-detail-box .product-title, .product-information .product-title {
     font-size: 28px !important;
   }
-  .product-description {
+  .product-description, .product-description {
     font-size: 13px;
     color: #ABABAB;
 }
