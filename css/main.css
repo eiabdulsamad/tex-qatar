@@ -3067,6 +3067,9 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
     .arabic .popup-container .row .col-sm-6.information-entry:first-of-type {
       -webkit-order: 1;
       order: 1; }
+    @media (max-width: 768px) {
+      .arabic .popup-container .row {
+        display: block !important; } }
 .arabic .pop-normal {
   display: -webkit-flex;
   display: flex;

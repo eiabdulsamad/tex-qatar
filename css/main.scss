@@ -3679,6 +3679,9 @@ strong {
       .col-sm-6.information-entry:first-of-type {
         @include order(1);
       }
+      @media (max-width: 768px) {
+        display: block !important;
+      }
     }
   }
 .pop-normal {
