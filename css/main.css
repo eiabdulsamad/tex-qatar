@@ -3135,6 +3135,9 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
   .arabic .header-top-entry .list {
     right: 0; } }
 @media (max-width: 991px) {
+  .category-products li {
+    height: auto; }
+
   .single-widget h2 {
     font-size: 14px;
     margin-top: 17px !important; }
@@ -3191,6 +3194,13 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
   .main-menu-section {
     width: 100%; } }
 @media (max-width: 767px) {
+  .mainmenu {
+    background-color: #F7F7F7;
+    border-radius: 4px; }
+
+  .navbar-nav {
+    margin: auto; }
+
   .header-top-entry .list {
     min-width: 100% !important;
     left: 0 !important; }
@@ -3214,6 +3224,7 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
     visibility: hidden; }
 
   .navbar-collapse.collapse {
+    padding-left: 15px;
     margin: auto !important;
     float: none;
     display: none !important; }
