@@ -2773,6 +2773,10 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
   .right-section.padding-right {
     padding-right: 15px; } }
 
+@media (max-width: 768px) {
+  .right-section {
+    width: 100%; } }
+
 .category-products .badge {
   float: right; }
 

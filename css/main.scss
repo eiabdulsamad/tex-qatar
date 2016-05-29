@@ -3286,6 +3286,12 @@ div[data-rpt="2"] {
   }
 }
 
+.right-section {
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
 .category-products {
   .badge {
     float: right;
