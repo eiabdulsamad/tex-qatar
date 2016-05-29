@@ -1002,7 +1002,7 @@ h2.title:before {
   cursor: pointer;
   position: absolute;
   top: 36%;
-  z-index: 99; }
+  z-index: 9; }
   .recommended-item-control.left {
     left: 2px; }
   .recommended-item-control.right {
@@ -2762,6 +2762,12 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
     transition: opacity 300ms ease-out; }
 
 @media (max-width: 767px) {
+  .image-gall .gallery-thumbs .swiper-slide {
+    width: 12%; }
+
+  .title-main-bx {
+    margin-top: 20px; }
+
   .main-section {
     display: -webkit-flex;
     display: flex;
@@ -2876,7 +2882,7 @@ div[data-rpt="2"] div:last-of-type .col-md-offset-2 {
   font-size: 15px !important;
   line-height: 21px;
   font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif; }
-.arabic .product-detail-box .product-title {
+.arabic .product-detail-box .product-title, .arabic .product-information .product-title {
   font-size: 28px !important; }
 .arabic .product-description {
   font-size: 13px;

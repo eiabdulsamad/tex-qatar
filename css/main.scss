@@ -1284,7 +1284,7 @@ h2.title:before {
   }
   position: absolute;
   top: 36%;
-  z-index: 99;
+  z-index: 9;
   i {
     background: none repeat scroll 0 0 #f20000;
     color: #FFFFFF;
@@ -3271,6 +3271,12 @@ div[data-rpt="2"] {
 }
 
 @media (max-width: 767px) {
+  .image-gall .gallery-thumbs .swiper-slide {
+    width: 12%;
+  }
+   .title-main-bx {
+    margin-top: 20px;
+  }
   .main-section {
     @include display-flex;
     display: block;
@@ -3372,6 +3378,8 @@ div[data-rpt="2"] {
 
 .arabic {
 
+
+
   .for-eng {
     display: none !important;
   }
@@ -3431,7 +3439,7 @@ div[data-rpt="2"] {
     line-height: 21px;
     font-family: 'Droid Arabic Kufi', 'Roboto', sans-serif;
   }
-  .product-detail-box .product-title {
+  .product-detail-box .product-title, .product-information .product-title {
     font-size: 28px !important;
   }
   .product-description {
